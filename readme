@@ -1,0 +1,29 @@
+1º instalar glogal o LESS:
+- npm install -g less
+2º iniciar o npm:
+- npm init
+3º instalar para dev:
+- npm install --save-dev less
+4º criar um gitignore e acrescenter o node_modules:
+- dentro da pasta que está sendo trabalhando criar gitignore, edentro do arquivo escrever node_modules
+5º dentro da pasta package.json, incluir o comando:
+- "scripts":{
+    "less": "lessc ./src/styles/main.less ./buld/styles/main.css",
+    ...
+}
+6º execultar o programa:
+- npm run less
+7º instalando um plug-in (no LESS nnão temos a função watch):
+-npm install -g less-watch-compiler
+8º instalando o mesmo plugin para dev:
+-npm install --save-dev less-watch-compiler
+9º dentro da pasta package.json temos que alterar o código que escrevemos no item 5º:
+-"scripts":{
+   "less": "less-watch-compiler ./src/styles ./build/styles",
+   ...
+}
+10º ainda na pasta package.json, podemos passar um terceiro arquivo, o principal:
+-"scripts":{
+   "less": "less-watch-compiler ./src/styles ./build/styles main.less",
+   ...
+}
