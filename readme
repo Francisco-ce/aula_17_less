@@ -60,3 +60,33 @@ Praticidades:
 
 não precisamos repetir o profile-bio todo código, podemos usar o "&"
 
+
+MIXINS: utilizado para evitar redundancia de códigos.
+
+código: .funcao {
+   aplicaçao: xxxx;
+}
+
+chamada: funcao()
+
+
+-------------------------------------------------------------------------------------------------------
+
+Nas imagens trazidas do site feather.com" as imagens são do tipo sgv, que conseguimos mudar o STROKE dela direto no código, alterandoisso alteramos a cor dela
+
+
+Mapeamento: utilizando o mapeamento não precisamos utilizar as variáveis (que foi criada).
+
+Código:
+---esse dentro do arquivo mapas.less ----
+#color() {
+   nome1: cor1;
+   nome2: cor2:
+}
+
+Chamada:
+
+1º @import "mapas.less"
+
+background-color: #color[nome1]
+
