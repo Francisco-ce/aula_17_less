@@ -27,3 +27,36 @@
    "less": "less-watch-compiler ./src/styles ./build/styles main.less",
    ...
 }
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Aula 17.2
+
+Comando atalho -> ul>li*4>a
+-retorna:
+     <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+
+
+escaping: subistitui o que foi escrito no código pelavariável definida.
+- código: " ~"()";
+**** ATENÇÃO ****
+Sempre colocar o breakPoint do tablet antes do BreakPoint do Mobile - pq o tamanho do mobile é atendido tmb pelo breakpoint do tablet
+
+Para resolver o problema da cascata podemos escrever o código:
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
+Praticidades:
+
+.profile-bio {
+    .profile-bio-name {
+        font-size: 16px;
+    }
+}
+
+não precisamos repetir o profile-bio todo código, podemos usar o "&"
+
